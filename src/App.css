@@ -1,0 +1,208 @@
+.task-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.primary-button,
+.danger-button,
+.task-actions button {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.primary-button {
+  padding: 10px 14px;
+  background: #1976d2;
+  color: #fff;
+}
+
+.primary-button:hover {
+  filter: brightness(0.95);
+}
+
+.task-actions button {
+  padding: 0;
+  min-width: 38px;
+  min-height: 38px;
+  width: 38px;
+  height: 38px;
+  background: transparent;
+  color: #555;
+}
+
+.task-actions button:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.task-actions .edit-button {
+  color: #1976d2;
+}
+
+.task-actions .edit-button:hover {
+  background: rgba(25, 118, 210, 0.12);
+}
+
+.task-actions .danger-button {
+  color: #d32f2f;
+}
+
+.task-actions .danger-button:hover {
+  background: rgba(211, 47, 47, 0.12);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.task-item.done,
+.task-item.pending {
+  background: #ffffff;
+}
+
+.task-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.task-status {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.task-status.pending {
+  color: #d32f2f;
+  background: rgba(211, 47, 47, 0.12);
+}
+
+.task-status.done {
+  color: #2e7d32;
+  background: rgba(46, 125, 50, 0.12);
+}
+
+.task-switch {
+  margin-top: 8px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.task-actions button {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  min-width: 38px;
+  min-height: 38px;
+}
+
+.task-actions button:hover {
+  filter: brightness(0.95);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.modal {
+  width: min(100%, 420px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.modal h2 {
+  margin: 0 0 18px;
+}
+
+.modal form,
+.modal p {
+  margin: 0;
+}
+
+.modal input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.modal-buttons button {
+  min-width: 110px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-buttons .primary-button {
+  background: #1976d2;
+  color: #fff;
+}
+
+.modal-buttons .primary-button:hover {
+  filter: brightness(0.95);
+}
+
+.modal-buttons .danger-button {
+  background: #d32f2f;
+  color: #fff;
+}
+
+.modal-buttons .danger-button:hover {
+  filter: brightness(0.95);
+}
